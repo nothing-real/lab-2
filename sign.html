@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма-анкетування</title>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">HOSTIT</a></div> 
+            <ul class="ulbar">
+                <li class="bar"><a href="index.html">Home</a></li>
+                <li class="bar"><a href="news.html">News</a></li>
+                <button class="signupbutton"><a class="signup" href="sign.html">Sign Up</a></button>
+            </ul>
+        </div>
+    </nav>
+    <main class="survey-form">
+        <h1>Форма-анкетування</h1>
+        <form autocomplete="off" action="#" method="post">
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" placeholder=" " name="email" required><br><br>
+
+            <label for="username">Логін:</label>
+            <input type="text" id="username" placeholder=" " name="username" required><br><br>
+
+            <label for="password">Пароль: <span title="Мінімум 8 символів"></span></label>
+            <input type="password" id="password" placeholder=" " name="password" minlength="8" required>
+            <small>Мінімум 8 символів</small><br><br>
+
+
+            
+            <label for="message">Розширене текстове повідомлення:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <label for="options">Виберіть варіант:</label>
+            <select id="options" name="options" required>
+                <option value="default" selected>Оберіть варіант</option>
+                <option value="option1">Варіант 1</option>
+                <option value="option2">Варіант 2</option>
+                <option value="option3">Варіант 3</option>
+            </select><br><br>
+
+
+            <label>Виберіть вашу стать:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Чоловік</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жінка</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Mechanic</label><br><br>
+
+            <label>Ваші інтереси:</label><br>
+            <input type="checkbox" id="interest1" name="interests" value="coding">
+            <label for="interest1">Програмування</label><br>
+            <input type="checkbox" id="interest2" name="interests" value="sports">
+            <label for="interest2">Спорт</label><br>
+            <input type="checkbox" id="interest3" name="interests" value="music">
+            <label for="interest3">Музика</label><br><br>
+
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </main>
+</body>
+</html>
